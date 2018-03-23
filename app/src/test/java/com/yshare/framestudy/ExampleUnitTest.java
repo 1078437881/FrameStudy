@@ -1,22 +1,9 @@
 package com.yshare.framestudy;
 
-import android.util.Log;
-
-import com.yshare.bean.StoriesBean;
-import com.yshare.bean.TestBean;
-import com.yshare.utils.RetrofitFactory;
+import com.yshare.mvp.test.bean.StoriesBean;
+import com.yshare.mvp.test.bean.TestBean;
 
 import org.junit.Test;
-
-import java.util.List;
-
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.annotations.NonNull;
-import io.reactivex.disposables.Disposable;
-import io.reactivex.functions.Consumer;
-import io.reactivex.functions.Function;
-import io.reactivex.internal.util.ExceptionHelper;
-import io.reactivex.schedulers.Schedulers;
 
 import static org.junit.Assert.*;
 

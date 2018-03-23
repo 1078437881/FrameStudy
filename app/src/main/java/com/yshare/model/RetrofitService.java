@@ -1,8 +1,10 @@
 package com.yshare.model;
 
 
-import com.yshare.bean.TestBean;
 
+
+
+import com.yshare.mvp.test.bean.TestBean;
 
 import io.reactivex.Observable;
 import retrofit2.http.GET;

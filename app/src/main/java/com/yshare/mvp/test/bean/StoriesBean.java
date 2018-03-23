@@ -1,24 +1,18 @@
-package com.yshare.bean;
+package com.yshare.mvp.test.bean;
+
+import java.util.List;
 
 /**
  * Created by Administrator on 2018/3/14.
  */
 
-public class TopStoriesBean {
+public class StoriesBean {
 
-    private String image;
     private int type;
     private int id;
     private String ga_prefix;
     private String title;
-
-    public String getImage() {
-        return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
-    }
+    private List<String> images;
 
     public int getType() {
         return type;
@@ -50,5 +44,13 @@ public class TopStoriesBean {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public List<String> getImages() {
+        return images;
+    }
+
+    public void setImages(List<String> images) {
+        this.images = images;
     }
 }

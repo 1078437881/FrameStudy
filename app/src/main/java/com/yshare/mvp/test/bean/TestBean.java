@@ -1,4 +1,4 @@
-package com.yshare.bean;
+package com.yshare.mvp.test.bean;
 
 import java.util.List;
 
@@ -35,6 +35,5 @@ public class TestBean {
     public void setTop_stories(List<TopStoriesBean> top_stories) {
         this.top_stories = top_stories;
     }
-
 
 }
