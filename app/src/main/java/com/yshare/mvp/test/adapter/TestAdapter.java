@@ -8,8 +8,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.yshare.framestudy.R;
 import com.yshare.mvp.test.bean.StoriesBean;
+import com.yshare.utils.TimeUtils;
 
 import java.util.List;
 
@@ -17,7 +19,7 @@ import java.util.List;
  * Created by Administrator on 2018/3/21.
  */
 
-public class TestAdapter extends RecyclerView.Adapter {
+public class TestAdapter extends RecyclerView.Adapter<TestAdapter.viewHolder> {
 
     private List<StoriesBean> list;
     private Context context;
@@ -26,14 +28,16 @@ public class TestAdapter extends RecyclerView.Adapter {
         this.list = list;
     }
     @Override
-    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public viewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         context = parent.getContext();
         return new viewHolder(LayoutInflater.from(context).inflate(R.layout.item_test,parent,false));
     }
 
     @Override
-    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-
+    public void onBindViewHolder(viewHolder holder, int position) {
+        Glide.with(context).load(list.get(position).getImages().get(0)).crossFade().into(holder.imageView);
+        holder.textView1.setText(list.get(position).getTitle());
+        holder.textView2.setText(TimeUtils.getNowTime());
     }
 
     @Override
