@@ -1,13 +1,6 @@
 package com.yshare.framestudy;
 
-import android.util.Log;
-
-import com.yshare.mvp.test.bean.StoriesBean;
-import com.yshare.mvp.test.bean.TestBean;
-
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 /**
  * Example local unit test, which will execute on the development machine (host).
