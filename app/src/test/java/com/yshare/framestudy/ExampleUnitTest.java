@@ -1,5 +1,7 @@
 package com.yshare.framestudy;
 
+import android.util.Log;
+
 import com.yshare.mvp.test.bean.StoriesBean;
 import com.yshare.mvp.test.bean.TestBean;
 
@@ -15,6 +17,8 @@ import static org.junit.Assert.*;
 public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() throws Exception {
-        assertEquals(4, 2 + 2);
+//        assertEquals(4, 2 + 2);
+
+        System.out.println(System.currentTimeMillis());
     }
 }
