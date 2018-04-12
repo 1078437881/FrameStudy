@@ -1,8 +1,11 @@
 package com.yshare.framestudy;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.yshare.mvp.test.activity.TestActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
         // Example of a call to a native method
         TextView tv = findViewById(R.id.sample_text);
         tv.setText(stringFromJNI());
+        Intent intent = new Intent(MainActivity.this, TestActivity.class);
+        startActivity(intent);
+
     }
 
     /**

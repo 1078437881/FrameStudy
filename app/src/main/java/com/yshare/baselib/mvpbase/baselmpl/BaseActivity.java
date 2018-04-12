@@ -24,6 +24,7 @@ public abstract class BaseActivity<P extends BasePresenter> extends AppCompatAct
         super.onCreate(savedInstanceState);
         context = this;
         ActivityManager.getAppInstance().addActivity(this);//将当前Activity添加进管理栈
+        presenter = initPresenter();
     }
 
     @Override
